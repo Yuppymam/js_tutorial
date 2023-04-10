@@ -1,4 +1,4 @@
-let Phrase = require("yuppy-palindrome");
+let Phrase = require("yuppy-palindrome2");
 
 function palindromeTester(event) {
   event.preventDefault();

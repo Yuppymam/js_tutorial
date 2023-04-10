@@ -24,12 +24,16 @@ function Phrase(content) {
 
   // パリンドロームならtrueを、違うならfalseを返す
   this.palindrome = function palindrome() {
-    return this.processedContent() === this.processedContent().reverse();
+    if (this.processedContent()) {
+      return this.processedContent() === this.processedContent().reverse();
+    } else {
+      return false;
+    }
   }
 }
 
 },{}],2:[function(require,module,exports){
-let Phrase = require("yuppy-palindrome");
+let Phrase = require("yuppy-palindrome2");
 
 function palindromeTester(event) {
   event.preventDefault();
@@ -51,4 +55,4 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-},{"yuppy-palindrome":1}]},{},[2]);
+},{"yuppy-palindrome2":1}]},{},[2]);
